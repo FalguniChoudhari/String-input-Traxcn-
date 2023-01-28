@@ -1,0 +1,19 @@
+<?php
+function R($arr1, $arr2)
+{
+  for($i=0;$i<count($arr1);$i++)
+  {
+    if(array_search ($arr1[$i],$arr2) !='')
+    {
+     echo $arr1[$i]." - ".array_search($arr1[$i],$arr2)."<br/><br/>";
+    }
+   else
+    {
+    echo $arr1[$i]."- NA <br/><br/>";
+    }
+  }
+}
+$arr1=["A","B","C","D"];
+$arr2=["P","Q","A","D"];
+R($arr1,$arr2);
+?>
