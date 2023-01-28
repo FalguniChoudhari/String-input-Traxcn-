@@ -1,0 +1,11 @@
+<?php
+function P($string)
+{ $length=strlen($string);
+ for ($i=0; $i<$length; $i++)
+ { $B=$B.$string[$i];
+ echo $B."<br>";
+ }
+}
+echo P("TRACXN");
+echo P("ABC");
+?> 
