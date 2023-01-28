@@ -1,0 +1,23 @@
+<?php
+function V($arr)
+{
+ //printf($arr);
+ $arr2= array_unique($arr);
+ $arr3=[];
+ //return ($arr2);
+ for ($i=0; $i<count($arr2); $i++)
+  {
+  for ($j=0; $j<count($arr); $j++)
+   {
+   if ($arr2[$i]==$arr[$j])
+    {
+    $arr3[$arr2[$i]]=$arr3[$arr2[$i]]+1;
+    }
+   }
+  }
+ echo max($arr3);
+}
+$arr=["1","2","3","4","5","5","5","5","5","2","2","1","1"];
+$arr=["1","2","3","4"];
+     V($arr);
+?> 
